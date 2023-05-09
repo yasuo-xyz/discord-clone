@@ -1,0 +1,73 @@
+// sassを導入すると、入れ子構造で書くことが出来る
+.sidebar {
+    // 要素(sidebar)をフレックスコンテナーとして定義
+    // 親要素に対して子要素を横並びにする 
+    display: flex;
+
+    // 100%ある内の35%をサイドバーで使うとゆう意味
+    flex: 0.35;
+
+    // 高さをいっぱい（100%)使うとゆう意味
+    height: 100vh;
+
+    // 背景色をグレーにするとゆう意味
+    background-color: gray;
+
+    .sidebarLeft {
+        // 下記のflex-direction: columnが無ければ横並びになる
+        display: flex;
+
+        // column型にする事で縦になる
+        flex-direction: column;
+
+        // 交差軸に対して中央揃えにする
+        align-items: center;
+
+        // 上からの余白を空ける
+        margin-top: 15px;
+
+        // 背景色を設定
+        background-color: black;
+
+        // 内側の余白を指定
+        padding: 7px 15px;
+
+        // 親
+        .serverIcon {
+            // 幅を60ピクセルに指定
+            width: 60px;
+
+            // 高さを60ピクセルに指定する
+            height: 60px;
+
+            // 背景色を灰色に指定
+            background-color: gray;
+
+            // 角を完全な円形にするため、border-radiusを大きな値で指定
+            border-radius: 9999px;
+
+            // 下部に10ピクセルの余白を設定
+            margin-bottom: 10px;
+
+            // 位置を相対的な位置に指定
+            position: relative;
+
+            img {
+                // 親要素の左上隅からの位置ではなく、親要素を基準とした位置で指定
+                position: absolute;
+
+                // 幅を50ピクセルに指定
+                width: 50px;
+
+                // 上部を親要素の中央に揃え、50%を指定することで、親要素の高さの中央に配置されるようになる。
+                top: 50%;
+
+                // 左部を親要素の中央に揃え、50%を指定することで、親要素の幅の中央に配置されるようになる。
+                left: 50%;
+
+                // 幅と高さの50%ずつ左上に移動させることで、要素が中央に配置されるようになる。
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
