@@ -10,7 +10,7 @@
     // 高さをいっぱい（100%)使うとゆう意味
     height: 100vh;
 
-    // 背景色を設定（後でホームに移動させる）
+    // 背景色を指定（後でホームに移動させる）
     background-color: #33363d;
     
     .sidebarLeft {
@@ -72,6 +72,16 @@
     }
 
     .sidebarRight {
+        // 背景色を指定
         background-color: #2b2d33;
+        width: 300px;
+
+        .sidebarTop {
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
     }
 }
