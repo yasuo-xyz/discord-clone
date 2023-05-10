@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Sidebar.scss";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import AddIcon from '@mui/icons-material/Add';
 
 const Sidebar = () => {
   return (
@@ -35,6 +36,17 @@ const Sidebar = () => {
             </div>
 
             {/* サイドバーのチャンネルを追加する */}
+            <div className="sidebarChannels">
+                {/* サイドバーチャンネルヘッダー（型） */}
+                <div className="sidebarChannelsHeader">
+                    {/* サイドバーヘッダー（型） */}
+                    <div className="sidebarHeader">
+                        <ExpandMoreIcon />
+                        <h4>プログラミングチャンネル</h4>
+                    </div>
+                    <AddIcon className="sidebarAddIcon" />
+                </div>
+            </div>
 
         </div>
     </div>

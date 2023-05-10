@@ -1,3 +1,5 @@
+<!-- ここにやった事や学んだ事などをメモして書き留めておこう！！ -->
+<!-- 自分で買ってUdemyで学んだ事の成果物です -->
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
