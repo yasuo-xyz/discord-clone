@@ -1,0 +1,49 @@
+.sidebarChannel {
+    // 左内側の余白を指定
+    padding-left: 20px;
+
+    // 外側の余白を指定
+    margin-top: 2px;
+
+    h4 {
+        // 色を指定
+        color: #7b7c85;
+
+        // 横並び
+        display: flex;
+
+        // 交差軸に対して中央寄せ
+        align-items: center;
+
+        // 内側の余白を指定
+        padding: 5px;
+
+        // 文字の大きさを指定
+        font-size: 1.1rem;
+
+        // クリック出来るように指定
+        cursor: pointer;
+
+        // &とは親を意味しこの場合だとh4がそれに該当する（Sass記法）
+        // 要は指定した要素にカーソルを合わせると、何かしらの事が出来るよって事
+        &:hover {
+            // 色を指定
+            color: white;
+
+            // 背景色を指定
+            background-color: #33363d;
+
+            // 丸みを指定
+            border-radius: 5px;
+        }
+    }
+
+    .sidebarChannelHash {
+        // 文字の大きさを指定
+        font-size: 22px;
+
+        // 右内側の余白を指定
+        padding-right: 10px;
+    }
+
+}
