@@ -78,6 +78,9 @@
         // 横幅を指定
         width: 300px;
 
+        // ポジションの絶対値をサイドバーライトに合わせる
+        position: relative;
+
         .sidebarTop {
             // 色を指定
             color: #ffffff;
@@ -128,6 +131,81 @@
                     // カーソルのポインターにする
                     cursor: pointer;
                 }
+            }
+        }
+
+        .sidebarFooter {
+            // 絶対位置の基準点から一番下に指定
+            // この場合ブラウザの左上が一番上の基点になる
+            position: absolute;
+
+            // 下からの配置位置（距離）を指定
+            bottom: 0;
+
+            // 横並びに指定
+            display: flex;
+
+            // 中央揃えに指定
+            align-items: center;
+
+            // flexアイテムの両端揃え
+            justify-content: space-between;
+
+            // 横幅を指定
+            width: 93%;
+
+            // 下側の高さを設定
+            padding-bottom: 10px;
+
+            // 上側の境界線を1本線で表示
+            border-top: 1px solid #686a6e;
+
+            // 上内側の余白を指定
+            padding-top: 10px;
+            
+            // 左側のマージン領域を設定
+            margin-left: -3px;
+
+            .sidebarAccount {
+                // 横並びに指定
+                display: flex;
+                
+                // flexアイテムを縦軸で見たときに「上下のどこで揃えるか」を指定
+                align-items: center;
+
+                img {
+                    // 横幅を指定
+                    width: 60px;
+                }
+
+                .accountName {
+                    // 左側のマージン領域を設定
+                    margin-left: 5px;
+
+                    h4 {
+                        // 色を指定
+                        color: white;
+
+                        // 太さを指定
+                        font-weight: 500px;
+                    }
+
+                    span {
+                        // 色を指定
+                        color: #686a6e;
+                    }
+                }
+            }
+
+            .sidebarVoice {
+                // 横並び
+                display: flex;
+
+                // flexアイテムを縦軸で見たときに「上下のどこで揃えるか」を指定
+                align-items: center;
+
+                // 色を指定
+                color: #686a6e;
             }
         }
     }

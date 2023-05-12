@@ -82,14 +82,14 @@ const Sidebar = () => {
                             <span>#8162</span>
                         </div>
                     </div>
-                </div>
 
-                {/* サイドバーボイス（型） */}
-                {/* ボイスマイクのアイコンやヘッドフォンのアイコンを追加していく */}
-                <div className="sidebarVoice">
-                    <MicIcon />
-                    <HeadphonesIcon />
-                    <SettingsIcon />
+                    {/* サイドバーボイス（型） */}
+                    {/* ボイスマイクのアイコンやヘッドフォンのアイコンを追加していく */}
+                    <div className="sidebarVoice">
+                        <MicIcon />
+                        <HeadphonesIcon />
+                        <SettingsIcon />
+                    </div>
                 </div>
             </div>
 
