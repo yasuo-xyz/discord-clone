@@ -5,13 +5,13 @@
     display: flex;
 
     // 100%ある内の35%をサイドバーで使うとゆう意味
-    flex: 0.35;
+    flex: 0.3;
 
     // 高さをいっぱい（100%)使うとゆう意味
     height: 100vh;
 
     // 背景色を指定（後でホームに移動させる）
-    background-color: #33363d;
+    // background-color: #33363d;
     
     .sidebarLeft {
         // 下記のflex-direction: columnが無ければ横並びになる
@@ -80,6 +80,9 @@
 
         // ポジションの絶対値をサイドバーライトに合わせる
         position: relative;
+
+        // 空いてる余白をいっぱい使ってるって意味、伸ばしてる
+        flex-grow: 1;
 
         .sidebarTop {
             // 色を指定
