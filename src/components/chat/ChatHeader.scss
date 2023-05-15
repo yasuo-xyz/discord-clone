@@ -1,0 +1,18 @@
+.chatHeader {
+    // 横並び
+    display: flex;
+
+    // 交差軸に対して中央揃えにする
+    // display: flex;と併用して使われてる
+    align-items: center;
+
+    // flexアイテムの両端揃え
+    // display: flex; と併用して使われる
+    justify-content: space-between;
+
+    // 横幅を指定
+    width: 100%;
+
+    // 上内側の余白を指定
+    padding-top: 10px;
+}
