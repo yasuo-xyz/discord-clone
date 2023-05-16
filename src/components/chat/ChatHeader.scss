@@ -15,4 +15,77 @@
 
     // 上内側の余白を指定
     padding-top: 10px;
+
+    .chatHeaderLeft {
+        // 左内側の余白を指定
+        padding-left: 15px;
+
+        .chatHeaderHash {
+            // 色を指定
+            color: #7b7c85;
+
+            // 右内側の余白を指定
+            padding-right: 7px;
+        }
+
+        h3 {
+            // 色を指定
+            color: white;
+        }
+    }
+
+    .chatHeaderRight {
+        // 左内側の余白を指定
+        padding-left: 15px;
+
+        // 横並び
+        display: flex;
+
+        // 中央寄せ
+        align-items: center;
+
+        // 間隔を空ける
+        gap: 13px;
+
+        // 色を指定
+        color: #7b7c85;
+
+        .chatHeaderSearch {
+            // 横並び
+            display: flex;
+
+            // 中央寄せ
+            align-items: center;
+
+            // 背景色を指定
+            background-color: #282831;
+
+            // 内側の余白を指定
+            padding: 3px;
+
+            // 境界の外側の角を丸める
+            border-radius: 3px;
+
+            input {
+                // 後ろの色（白）を取り除いている
+                background: transparent;
+
+                // アウトラインを非表示にする
+                outline: none;
+
+                // 色を指定
+                color: white;
+
+                // ボーダーのスタイル・太さ・色を指定する
+                // noneだと、ボーダーは表示されず、太さも0になります。表のセルなどのボーダーが重なり合う場合は他の値が優先されます。これが初期値です。
+                border: none;
+            }
+        }
+
+        .MuiSvgIcon-root {
+            // マウスカーソルの形状を指定
+            // pointerだと、指差しの手になる
+            cursor: pointer;
+        }
+    }
 }
