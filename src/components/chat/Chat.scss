@@ -10,4 +10,70 @@
 
     // 背景色を指定
     background-color: #33363d;
+
+    .chatInput {
+        // 横並び
+        display: flex;
+
+        // 交差軸に対して中央揃え
+        // display: flex;と併用して使われてる
+        align-items: center;
+
+        // flexアイテムの両端揃え
+        // display: flex; と併用して使われる
+        justify-content: space-between;
+
+        // 内側の余白を指定
+        padding: 15px;
+
+        // 背景色を指定
+        background-color: #474b53;
+
+        // 丸みを帯びる
+        border-radius: 5px;
+
+        // 上下左右の外側の100ある内
+        margin: 20px;
+
+        // 色を指定
+        color: lightgray;
+
+        form {
+            // flexアイテムの伸び率を指定
+            flex-grow: 1;
+            input {
+                // 内側の余白を指定
+                padding: 15px;
+
+                // 透明にしてる
+                background: transparent;
+
+                // ボーダーを無しに指定
+                border: none;
+
+                // フォーカスした時のアウトラインを無しに指定
+                outline: none;
+
+                // 色を指定
+                color: white;
+
+                // 文字のサイズを指定
+                font-size: large;
+
+                // 横幅を指定
+                width: 100%;
+            }
+            .chatInputButton {
+                // 表示だけを消す
+                display: none;
+            }
+        }
+
+        .chatIputIcons {
+            .MuiSvgIcon-root {
+                // 内側の余白を指定
+                padding: 5px;
+            }
+        }
+    }
 }
