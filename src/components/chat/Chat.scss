@@ -11,6 +11,11 @@
     // 背景色を指定
     background-color: #33363d;
 
+    .chatMessage {
+        // 空いてる余白をいっぱいに伸ばして使ってるって意味
+        flex-grow: 1;
+    }
+
     .chatInput {
         // 横並び
         display: flex;

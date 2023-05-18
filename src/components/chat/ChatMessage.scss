@@ -1,0 +1,30 @@
+.message {
+    // 横並び
+    display: flex;
+
+    // 交差軸に対して中央揃えにする
+    // display: flex;と併用して使われてる
+    align-items: center;
+
+    // 内側の余白を指定
+    padding: 15px;
+
+    // 色を指定
+    color: white;
+
+    .messageInfo {
+        // 内側の余白を指定
+        padding: 20px 20px 20px 10px;
+    }
+
+    .messageTimestamp {
+        // 色を指定
+        color: #7b7c85;
+
+        // 左側のマージン領域を設定
+        margin-left: 20px;
+
+        // 文字のサイズを指定
+        font-size: 16px;
+    }
+}

@@ -5,6 +5,7 @@ import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import GifIcon from '@mui/icons-material/Gif';
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
+import ChatMessage from './ChatMessage';
 
 const Chat = () => {
   return (
@@ -12,7 +13,13 @@ const Chat = () => {
     {/* チャットヘッダー（コンポーネント） */}
     <ChatHeader />
     {/* チャットメッセージ */}
-    <div className="chatMessage"></div>
+    <div className="chatMessage">
+      {/* チャットメッセージ（コンポーネント） */}
+      <ChatMessage />
+      <ChatMessage />
+      <ChatMessage />
+      <ChatMessage />
+    </div>
     {/* チャットインポート */}
     <div className="chatInput">
       {/* アイコンをインポート */}
