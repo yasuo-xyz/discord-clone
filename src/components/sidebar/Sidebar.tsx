@@ -19,7 +19,7 @@ const Sidebar = () => {
             {/* サーバーアイコン（型） */}
             <div className="serverIcon">
                 {/* imgタグとは、画像を表示する為のタグ */}
-                <img src="./logo192.png" alt="" />
+                <img src="./discordIcon.png" alt="" />
             </div>
 
             {/* サーバーアイコン（型） */}
