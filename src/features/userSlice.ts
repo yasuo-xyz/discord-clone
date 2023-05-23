@@ -12,6 +12,7 @@ export const userSlice = createSlice({
     name: "user",
     // 読み：イニシャルステート
     initialState,
+    // アクションズも自動的に生成される
     reducers: {
         // ログイン、現在のユーザーをアクションペイロードで更新するとゆう記述
         // アクションペイロードとは、他のファイルでディスパッチとゆう操作が行わる
@@ -25,5 +26,6 @@ export const userSlice = createSlice({
         },
     }
 });
+// console.log(userSlice);
 
 export default userSlice.reducer;
