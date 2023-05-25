@@ -179,6 +179,9 @@
                 img {
                     // 横幅を指定
                     width: 60px;
+
+                    // 外側の角を丸めるのを指定
+                    border-radius: 50%;
                 }
 
                 .accountName {

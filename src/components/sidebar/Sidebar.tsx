@@ -6,8 +6,12 @@ import SidebarChannel from './SidebarChannel';
 import MicIcon from '@mui/icons-material/Mic';
 import HeadphonesIcon from '@mui/icons-material/Headphones';
 import SettingsIcon from '@mui/icons-material/Settings';
+import { auth } from '../../firebase';
+import { useAppSelector } from '../../app/hooks';
 
 const Sidebar = () => {
+    const user = useAppSelector((state) => state.user);
+
   return (
     // 型を定義
     // divタグとは、囲った文章全体を一つのまとまりとするブロック要素
@@ -70,16 +74,16 @@ const Sidebar = () => {
                     <div className="sidebarAccount">
 
                         {/* 画像を表示 */}
-                        <img src="./icon.png" alt="" />
+                        <img src={user?.photo} alt="" onClick={() => auth.signOut()}/>
 
                         {/* アカウントネーム（型） */}
                         <div className="accountName">
 
                             {/* 見出し */}
-                            <h4>ShinCode</h4>
+                            <h4>{user?.displayName}</h4>
 
                             {/* spanタグとは、文章内の一部分だけをまとめて指定するインライン要素 */}
-                            <span>#8162</span>
+                            <span>#{user?.uid.substring(0, 4)}</span>
                         </div>
                     </div>
 
