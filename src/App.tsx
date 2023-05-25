@@ -3,12 +3,13 @@ import './App.scss';
 import Sidebar from './components/sidebar/Sidebar';
 import Chat from './components/chat/Chat';
 import Login from './components/login/Login';
+import { useAppSelector } from './app/hooks';
 
 function App() {
   // ログインページを記述
-  // const user = useSelector((state) => state.user.user);
+  const user = useAppSelector((state) => state.user);
   // 仮置き記述
-  const user = null;
+  // const user = null;
 
   return (
     <div className="App">
