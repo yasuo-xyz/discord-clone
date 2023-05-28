@@ -8,8 +8,8 @@ import HeadphonesIcon from '@mui/icons-material/Headphones';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { auth, db } from '../../firebase';
 import { useAppSelector } from '../../app/hooks';
-import { collection, query } from 'firebase/firestore/lite';
-import { onSnapshot } from "firebase/firestore";
+// import { collection, query } from 'firebase/firestore/lite';
+import { onSnapshot, collection, query } from "firebase/firestore";
 
 const Sidebar = () => {
     const user = useAppSelector((state) => state.user);

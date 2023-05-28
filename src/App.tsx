@@ -7,7 +7,7 @@ import { useAppDispatch, useAppSelector } from './app/hooks';
 import { auth } from './firebase';
 import { login, logout } from './features/userSlice';
 import { ErrorBoundary } from 'react-error-boundary';
-import { ErrorFallBack } from '../utils/ErrorFallBack';
+import { ErrorFallBack } from "./ErrorFallBack";
 
 function App() {
   // ログインページを記述
