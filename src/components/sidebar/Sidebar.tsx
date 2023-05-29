@@ -89,7 +89,11 @@ const Sidebar = () => {
                 {/* サイドバーチャンネルリスト（型） */}
                 <div className="sidebarChannellisut">
                     {channels.map((channel) =>(
-                        <SidebarChannel />
+                        <SidebarChannel
+                            channel={channel} 
+                            id={channel.id}
+                            key={channel.id}
+                        />
                     ))}
                     {/* <SidebarChannel />
                     <SidebarChannel />
