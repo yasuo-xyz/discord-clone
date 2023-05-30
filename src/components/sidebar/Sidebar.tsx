@@ -9,35 +9,14 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import { auth, db } from '../../firebase';
 import { useAppSelector } from '../../app/hooks';
 // import { collection, query } from 'firebase/firestore/lite';
-import { onSnapshot, collection, query, DocumentData } from "firebase/firestore";
 import { channel } from 'diagnostics_channel';
-
-// インターフェースを用意
-interface Channal {
-    id: string,
-    channel: DocumentData;
-}
+import useCollection from '../../hooks/useCollection';
 
 const Sidebar = () => {
-    const [channels, setChannels ] = useState<Channal[]>([]);
-
-
     const user = useAppSelector((state) => state.user);
-    const q = query(collection(db, "channels"));
-
-    useEffect(() => {
-        onSnapshot(q, (querySnapshot) => {
-            const channelsResults: Channal[] = [];
-            querySnapshot.docs.forEach((doc) =>
-                channelsResults.push({
-                    // ここでゆうdocのidとは、ファイヤーベースにあるドキュメントのランダムな文字列が該当する
-                    id: doc.id,
-                    channel: doc.data(),
-                })
-            );
-            setChannels(channelsResults);
-        });
-    }, []);
+    // カスタムフックスを作成
+    // ここでゆうチャンネンルズとは、ファイヤベースで作ったコレクションの名前が該当される
+    const { documents: channels } = useCollection("channels");
 
   return (
     // 型を定義
