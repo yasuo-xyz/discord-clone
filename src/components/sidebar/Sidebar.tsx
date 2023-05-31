@@ -11,12 +11,26 @@ import { useAppSelector } from '../../app/hooks';
 // import { collection, query } from 'firebase/firestore/lite';
 import { channel } from 'diagnostics_channel';
 import useCollection from '../../hooks/useCollection';
+import { addDoc, collection } from 'firebase/firestore';
 
 const Sidebar = () => {
     const user = useAppSelector((state) => state.user);
     // カスタムフックスを作成
     // ここでゆうチャンネンルズとは、ファイヤベースで作ったコレクションの名前が該当される
     const { documents: channels } = useCollection("channels");
+
+    const addChannel = async () => {
+        // プロンプト関数を使っていく
+      let channelName: string | null =  prompt("新しいチャンネルを作成します");
+
+      if(channelName) {
+        // 非同期処理 第1引数
+        await addDoc(collection(db, "channels"), {
+            // 第2引数
+            channelName: channelName,
+        });
+      }
+    };
 
   return (
     // 型を定義
@@ -62,7 +76,7 @@ const Sidebar = () => {
                         <h4>プログラミングチャンネル</h4>
                     </div>
 
-                    <AddIcon className="sidebarAddIcon" />
+                    <AddIcon className="sidebarAddIcon" onClick={() => addChannel()}/>
                 </div>
                 
                 {/* サイドバーチャンネルリスト（型） */}
