@@ -5,6 +5,9 @@ import { InitialUserState } from "../Types";
 // TypesファイルからインポートしたInitialUserStateをinitialStateで設定
 const initialState:  InitialUserState = {
     user: null,
+    photo: undefined,
+    displayName: undefined,
+    uid: undefined
 }
 
 // ユーザースライスの役割としては、ユーザーのログイン、ログアウトを監視する為に作るもの

@@ -11,7 +11,7 @@ import { ErrorFallBack } from "./ErrorFallBack";
 
 function App() {
   // ログインページを記述
-  const user = useAppSelector((state) => state.user);
+  const user = useAppSelector((state) => state.user.user);
   // 仮置き記述
   // const user = null;
 

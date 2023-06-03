@@ -1,7 +1,11 @@
 import { channel } from 'diagnostics_channel';
+import { ReactNode } from 'react';
 // 型定義用ファイル
 // ユーザーのイニシャルステートの型を指定
 export interface InitialUserState {
+    photo: string | undefined;
+    displayName: ReactNode;
+    uid: any;
     user: null | {
         // ユーザーidを定義
         uid: string;
