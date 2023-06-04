@@ -14,6 +14,7 @@ const Chat = () => {
   return (
     <div className="chat">
     {/* チャットヘッダー（コンポーネント） */}
+    {/* エラー文を解決中 */}
     <ChatHeader channelName={channelName} />
     {/* チャットメッセージ */}
     <div className="chatMessage">
