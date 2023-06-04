@@ -2,6 +2,7 @@ import { channel } from 'diagnostics_channel';
 import { ReactNode } from 'react';
 // 型定義用ファイル
 // ユーザーのイニシャルステートの型を指定
+// エラー原因？
 export interface InitialUserState {
     photo: string | undefined;
     displayName: ReactNode;

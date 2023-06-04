@@ -7,6 +7,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import SendIcon from '@mui/icons-material/Send';
 import HelpIcon from '@mui/icons-material/Help';
 
+// エラー原因？
 type Props = {
     channelName: string | null;
 };
