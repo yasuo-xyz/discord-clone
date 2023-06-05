@@ -8,6 +8,7 @@ import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 import ChatMessage from './ChatMessage';
 import { useAppSelector } from '../../app/hooks';
 
+// 修正点？
 const Chat = () => {
   const channelName = useAppSelector((state) => state.user.user);
 
