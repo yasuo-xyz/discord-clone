@@ -9,6 +9,7 @@ import ChatMessage from './ChatMessage';
 import { useAppSelector } from '../../app/hooks';
 
 // 修正点？
+// 本日お休み
 const Chat = () => {
   const channelName = useAppSelector((state) => state.user.user);
 
