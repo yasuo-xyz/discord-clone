@@ -2,9 +2,9 @@
 <!-- 自分で買ってUdemyで学んだ事の成果物です -->
 # TypeScriptとは？
 
- JavaScriptにコンパイル（変換）される
- 静的型システムが付いた
- JavaScriptの上位集合
+ JavaScriptにコンパイル（変換）される<br>
+ 静的型システムが付いた  
+ JavaScriptの上位集合  
 
 ## JavaScriptにコンパイルされるとは？
 
