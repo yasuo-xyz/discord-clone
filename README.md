@@ -1,5 +1,17 @@
 <!-- ここにやった事や学んだ事などをメモして書き留めておこう！！ -->
 <!-- 自分で買ってUdemyで学んだ事の成果物です -->
+# TypeScriptとは？
+
+ JavaScriptにコンパイル（変換）される
+ 静的型システムが付いた
+ JavaScriptの上位集合
+
+## JavaScriptにコンパイルされるとは？
+
+TypeScriptで書いたものはJavaScriptでコンパイルされる
+TypeScriptはJavaScriptに変換させて、そのJavaScriptを実行しているプロセス（方法）
+なのでJavaScriptが動く環境であればTypeScriptも動くとゆう事になる
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
