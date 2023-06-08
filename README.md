@@ -8,13 +8,20 @@
 
 ## JavaScriptにコンパイルされるとは？
 
-TypeScriptで書いたものはJavaScriptでコンパイルされる
-TypeScriptはJavaScriptに変換させて、そのJavaScriptを実行しているプロセス（方法）
-なのでJavaScriptが動く環境であればTypeScriptも動くとゆう事になる
+TypeScriptで書いたものはJavaScriptでコンパイルされる<br>
+TypeScriptはJavaScriptに変換させて、そのJavaScriptを実行しているプロセス（方法）<br>
+なのでJavaScriptが動く環境であればTypeScriptも動くとゆう事になる<br>
 
-# Getting Started with Create React App
+### 静的型システムが付いたとは？
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TypeScriptがJavaScriptに変換される時にTypeScriptの全部型の検査がされる<br>
+変数、関数、仮引数、戻り値などの値がどうゆうのが返るのかを全部確認している<br>
+型がちゃんと合ってるか文字を入れないとダメなのに数字が入ってるとかも確認される<br>
+なので型検査に通るようにTypeScriptは書く必要がある
+
+<!-- # Getting Started with Create React App -->
+
+<!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -57,4 +64,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn React, check out the [React documentation](https://reactjs.org/). -->
