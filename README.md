@@ -17,7 +17,13 @@ TypeScriptはJavaScriptに変換させて、そのJavaScriptを実行してい�
 TypeScriptがJavaScriptに変換される時にTypeScriptの全部型の検査がされる<br>
 変数、関数、仮引数、戻り値などの値がどうゆうのが返るのかを全部確認している<br>
 型がちゃんと合ってるか文字を入れないとダメなのに数字が入ってるとかも確認される<br>
-なので型検査に通るようにTypeScriptは書く必要がある
+なので型検査に通るようにTypeScriptは書く必要がある<br>
+
+#### JavaScriptの上位集合（英語：スーパーセット）とは？
+
+反対の意味だと、部分集合（英語：サブセット）と言われる<br>
+JavaScriptで書いたコードは全部TypeScriptでもある<br>
+TypeScriptではJavaScriptの文法が全部使える<br>
 
 <!-- # Getting Started with Create React App -->
 
